@@ -1,0 +1,7 @@
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/awslabs/cfn-python-lint
+    rev: v0.63.2 # The version of cfn-lint to use Release v0.63.2
+    hooks:
+    -   id: cfn-python-lint
+        files: templates/.*\.(json|yml|yaml)$
